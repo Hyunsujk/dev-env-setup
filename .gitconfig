@@ -1,0 +1,9 @@
+[alias]
+    co = checkout
+    s = status
+    d = "difftool -d "
+    po = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
+    newdev = !git-newdev
+    fco = !git checkout $(git branch -l | cut -c 3- | fzy)
+    fm = !git merge $(git branch -l | cut -c 3- | fzy)
+    refresh =!git-refresh.sh
