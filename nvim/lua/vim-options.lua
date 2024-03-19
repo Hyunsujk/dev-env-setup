@@ -1,9 +1,25 @@
+vim.cmd("set number")
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " "
-
-
-
-
+vim.api.nvim_set_keymap("n", "<leader>1", "1gt", { desc = "Move to tab 1" })
+vim.api.nvim_set_keymap("n", "<leader>2", "2gt", { desc = "Move to tab 2" })
+vim.api.nvim_set_keymap("n", "<leader>3", "3gt", { desc = "Move to tab 3" })
+vim.api.nvim_set_keymap("n", "<leader>4", "4gt", { desc = "Move to tab 4" })
+vim.api.nvim_set_keymap("n", "<leader>5", "5gt", { desc = "Move to tab 5" })
+vim.api.nvim_set_keymap("n", "<leader>6", "6gt", { desc = "Move to tab 6" })
+vim.api.nvim_set_keymap("n", "<leader>7", "7gt", { desc = "Move to tab 7" })
+vim.api.nvim_set_keymap("n", "<leader>8", "8gt", { desc = "Move to tab 8" })
+vim.api.nvim_set_keymap("n", "<leader>9", "9gt", { desc = "Move to tab 9" })
+vim.api.nvim_set_keymap("n", "<leader>tnt", ":tabnew<CR>", { desc = "Open a new tab" })
+vim.api.nvim_set_keymap("n", "<leader>tct", ":tabclose<CR>", { desc = "Close the current tab" })
+vim.api.nvim_set_keymap("n", "<C-h>", ":wincmd h<CR>", { desc = "Move to left split pane" })
+vim.api.nvim_set_keymap("n", "<C-j>", ":wincmd j<CR>", { desc = "Move to down split pane" })
+vim.api.nvim_set_keymap("n", "<C-k>", ":wincmd k<CR>", { desc = "Move to up split pane" })
+vim.api.nvim_set_keymap("n", "<C-l>", ":wincmd l<CR>", { desc = "Move to right split pane" })
+vim.api.nvim_set_keymap("n", "<leader>jj", "10j", { desc = "Jump down 10 lines" })
+vim.api.nvim_set_keymap("n", "<leader>kk", "10k", { desc = "Jump up 10 lines" })
+vim.api.nvim_set_keymap("n", "<leader>sc", "<C-w-c>", { desc = "Close the current split" })
+vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
