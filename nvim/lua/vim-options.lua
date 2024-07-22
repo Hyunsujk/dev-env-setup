@@ -1,8 +1,8 @@
-vim.cmd("set number")
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
+vim.opt.number = true
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
 vim.g.mapleader = " "
 vim.api.nvim_set_keymap("n", "<leader>1", "1gt", { desc = "Move to tab 1" })
 vim.api.nvim_set_keymap("n", "<leader>2", "2gt", { desc = "Move to tab 2" })
